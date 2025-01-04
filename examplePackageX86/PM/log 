@@ -1,0 +1,66 @@
+18:27:34.0906 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:86]: activating GateHanlder
+18:27:34.0906 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:86]: activating GateHanlder
+18:27:44.4731 FATAL on_validate[/home/mr/ws/Mrcode/park_manager/src/ParkManager/WebSocketServer.cpp:102]: bool WebSocketServer::on_validate(server*, websocketpp::connection_hdl) 102: select_subprotocol: PMS
+18:27:44.4731 INFO on_open[/home/mr/ws/Mrcode/park_manager/src/ParkManager/WebSocketServer.cpp:117]: connection opened 
+18:27:44.4731 INFO on_open[/home/mr/ws/Mrcode/park_manager/src/ParkManager/WebSocketServer.cpp:118]: void WebSocketServer::on_open(server*, websocketpp::connection_hdl): 118 strUri:/Gate1
+18:27:44.4742 INFO RunServer[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:67]: server has a new connection 
+18:27:45.4736 FATAL on_validate[/home/mr/ws/Mrcode/park_manager/src/ParkManager/WebSocketServer.cpp:102]: bool WebSocketServer::on_validate(server*, websocketpp::connection_hdl) 102: select_subprotocol: PMS
+18:27:45.4737 INFO on_open[/home/mr/ws/Mrcode/park_manager/src/ParkManager/WebSocketServer.cpp:117]: connection opened 
+18:27:45.4737 INFO on_open[/home/mr/ws/Mrcode/park_manager/src/ParkManager/WebSocketServer.cpp:118]: void WebSocketServer::on_open(server*, websocketpp::connection_hdl): 118 strUri:/Gate2
+18:27:45.4742 INFO RunServer[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:67]: server has a new connection 
+18:27:46.4736 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:100]: ###################Incoming Message PM <-> Gate #############
+18:27:46.4737 INFO OnGateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:124]: OnGateRegistration 124 Gate GateRegistration request:[0,"1804289383","GateRegistration",{"GateName":"EntGate1","GateType":"0"}]
+18:27:46.4737 INFO OnGateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:131]: messageId "1804289383" JsonString {"GateName":"EntGate1","GateType":"0"} 
+18:27:46.4737 INFO OnGateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:144]: Registering Entrance gate EntGate1 with uri /Gate1 
+18:27:46.4737 INFO OnGateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:169]: OnGateRegistration 169  GateRegistrationResponse : 
+ [1,""1804289383"",{"Result":"Accept"}] 
+18:27:48.4744 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:100]: ###################Incoming Message PM <-> Gate #############
+18:27:48.4745 INFO OnGateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:124]: OnGateRegistration 124 Gate GateRegistration request:[0,"846930886","GateRegistration",{"GateName":"EntGate2","GateType":"1"}]
+18:27:48.4745 INFO OnGateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:131]: messageId "846930886" JsonString {"GateName":"EntGate2","GateType":"1"} 
+18:27:48.4745 INFO OnGateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:154]: Registering exitingGates  EntGate2 with uri /Gate2 
+18:27:48.4745 INFO OnGateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:169]: OnGateRegistration 169  GateRegistrationResponse : 
+ [1,""846930886"",{"Result":"Accept"}] 
+18:27:48.4752 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:100]: ###################Incoming Message PM <-> Gate #############
+18:27:48.4752 INFO OnCarEnterence[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:175]: OnCarEnterence 175 Gate CarEnterence request:[0,"1681692777","CarEnterence",{"CarPlate":"EntGate10","enteranceTime":"2025-01-04T18:27:48Z","enterenceGate":"EntGate1","handicap":"Yes"}]
+18:27:48.4752 INFO OnCarEnterence[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:197]: allocating Handicap slot , remaining slots 5 
+18:27:48.4752 INFO OnCarEnterence[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:231]: OnCarEnterence 231  CarEnterence : 
+ [1,""1681692777"",{"comment":"Welcome EntGate10 ,Gate EntGate1 will be opened for you, first 30 minutes of your stay is free of charge then its only 1$ per min proceed to slot number 25 entering time 2025-01-04T18:27:48Z","result":"Accept"}] 
+18:27:50.4760 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:100]: ###################Incoming Message PM <-> Gate #############
+18:27:50.4875 INFO OnCarEnterence[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:175]: OnCarEnterence 175 Gate CarEnterence request:[0,"1714636915","CarEnterence",{"CarPlate":"EntGate11","enteranceTime":"2025-01-04T18:27:50Z","enterenceGate":"EntGate1","handicap":"No"}]
+18:27:50.4875 INFO OnCarEnterence[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:231]: OnCarEnterence 231  CarEnterence : 
+ [1,""1714636915"",{"comment":"Welcome EntGate11 ,Gate EntGate1 will be opened for you, first 30 minutes of your stay is free of charge then its only 1$ per min proceed to slot number 20 entering time 2025-01-04T18:27:50Z","result":"Accept"}] 
+18:27:52.4883 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:100]: ###################Incoming Message PM <-> Gate #############
+18:27:52.4883 INFO OnCarEnterence[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:175]: OnCarEnterence 175 Gate CarEnterence request:[0,"1957747793","CarEnterence",{"CarPlate":"EntGate12","enteranceTime":"2025-01-04T18:27:52Z","enterenceGate":"EntGate1","handicap":"No"}]
+18:27:52.4884 INFO OnCarEnterence[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:231]: OnCarEnterence 231  CarEnterence : 
+ [1,""1957747793"",{"comment":"Welcome EntGate12 ,Gate EntGate1 will be opened for you, first 30 minutes of your stay is free of charge then its only 1$ per min proceed to slot number 19 entering time 2025-01-04T18:27:52Z","result":"Accept"}] 
+18:27:54.4891 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:100]: ###################Incoming Message PM <-> Gate #############
+18:27:54.4891 INFO OnCarEnterence[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:175]: OnCarEnterence 175 Gate CarEnterence request:[0,"424238335","CarEnterence",{"CarPlate":"EntGate13","enteranceTime":"2025-01-04T18:27:54Z","enterenceGate":"EntGate1","handicap":"No"}]
+18:27:54.4891 INFO OnCarEnterence[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:231]: OnCarEnterence 231  CarEnterence : 
+ [1,""424238335"",{"comment":"Welcome EntGate13 ,Gate EntGate1 will be opened for you, first 30 minutes of your stay is free of charge then its only 1$ per min proceed to slot number 18 entering time 2025-01-04T18:27:54Z","result":"Accept"}] 
+18:27:56.4898 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:100]: ###################Incoming Message PM <-> Gate #############
+18:27:56.4899 INFO OnCarEnterence[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:175]: OnCarEnterence 175 Gate CarEnterence request:[0,"719885386","CarEnterence",{"CarPlate":"EntGate14","enteranceTime":"2025-01-04T18:27:56Z","enterenceGate":"EntGate1","handicap":"Yes"}]
+18:27:56.4899 INFO OnCarEnterence[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:197]: allocating Handicap slot , remaining slots 4 
+18:27:56.4899 INFO OnCarEnterence[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:231]: OnCarEnterence 231  CarEnterence : 
+ [1,""719885386"",{"comment":"Welcome EntGate14 ,Gate EntGate1 will be opened for you, first 30 minutes of your stay is free of charge then its only 1$ per min proceed to slot number 24 entering time 2025-01-04T18:27:56Z","result":"Accept"}] 
+18:27:58.4905 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:100]: ###################Incoming Message PM <-> Gate #############
+18:27:58.4906 INFO OnCarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:237]: OnCarStatusUpdate 237 Gate CarStatusUpdate request:[0,"1649760492","CarStatusUpdate",{"CarPlate":"EntGate10","exitingGate":"EntGate2"}]
+18:27:58.4906 INFO OnCarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:291]: OnCarStatusUpdate 291  CarStatusUpdate : 
+ [1,""1649760492"",{"comment":" bye bye come again :D","curreny":"$","payable":"0","status":"Exist"}] 
+18:28:00.4913 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:100]: ###################Incoming Message PM <-> Gate #############
+18:28:00.4913 INFO OnCarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:237]: OnCarStatusUpdate 237 Gate CarStatusUpdate request:[0,"596516649","CarStatusUpdate",{"CarPlate":"EntGate11","exitingGate":"EntGate2"}]
+18:28:00.4913 INFO OnCarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:291]: OnCarStatusUpdate 291  CarStatusUpdate : 
+ [1,""596516649"",{"comment":" bye bye come again :D","curreny":"$","payable":"0","status":"Exist"}] 
+18:28:02.4920 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:100]: ###################Incoming Message PM <-> Gate #############
+18:28:02.4920 INFO OnCarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:237]: OnCarStatusUpdate 237 Gate CarStatusUpdate request:[0,"1189641421","CarStatusUpdate",{"CarPlate":"EntGate12","exitingGate":"EntGate2"}]
+18:28:02.4920 INFO OnCarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:291]: OnCarStatusUpdate 291  CarStatusUpdate : 
+ [1,""1189641421"",{"comment":" bye bye come again :D","curreny":"$","payable":"0","status":"Exist"}] 
+18:28:04.4927 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:100]: ###################Incoming Message PM <-> Gate #############
+18:28:04.4927 INFO OnCarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:237]: OnCarStatusUpdate 237 Gate CarStatusUpdate request:[0,"1025202362","CarStatusUpdate",{"CarPlate":"EntGate13","exitingGate":"EntGate2"}]
+18:28:04.4927 INFO OnCarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:291]: OnCarStatusUpdate 291  CarStatusUpdate : 
+ [1,""1025202362"",{"comment":" bye bye come again :D","curreny":"$","payable":"0","status":"Exist"}] 
+18:28:06.4934 INFO GateHanlder[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:100]: ###################Incoming Message PM <-> Gate #############
+18:28:06.4934 INFO OnCarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:237]: OnCarStatusUpdate 237 Gate CarStatusUpdate request:[0,"1350490027","CarStatusUpdate",{"CarPlate":"EntGate14","exitingGate":"EntGate2"}]
+18:28:06.4935 INFO OnCarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:291]: OnCarStatusUpdate 291  CarStatusUpdate : 
+ [1,""1350490027"",{"comment":" bye bye come again :D","curreny":"$","payable":"0","status":"Exist"}] 
+18:28:08.4948 INFO RunServer[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:71]: closing /Gate2 connection 
+18:28:08.4958 INFO RunServer[/home/mr/ws/Mrcode/park_manager/src/ParkManager/ParkManagerServer.cpp:71]: closing /Gate1 connection 

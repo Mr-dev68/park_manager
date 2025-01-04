@@ -1,0 +1,87 @@
+18:27:44.4726 INFO WebSocketClient[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:22]: initializing new client ws://127.0.0.1:1884/Gate1 
+18:27:44.4727 INFO Connect[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:54]: WebSocketClient::Connect:: connecting to ws://127.0.0.1:1884/Gate1 
+18:27:45.4733 INFO WebSocketClient[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:22]: initializing new client ws://127.0.0.1:1884/Gate2 
+18:27:45.4733 INFO Connect[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:54]: WebSocketClient::Connect:: connecting to ws://127.0.0.1:1884/Gate2 
+18:27:46.4735 INFO GateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:103]: GateRegistration 103 Gate GateRegistration request:[0,"1804289383","GateRegistration",{"GateName":"EntGate1","GateType":"0"}]
+18:27:46.4736 FATAL SendMessage[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:148]: bool WebSocketClient::SendMessage(std::string) 148: Sending message successful.
+18:27:46.4736 INFO GetResponseMessage[/home/mr/ws/Mrcode/park_manager/src/CommonLibraries/MessageManager.cpp:73]: getting response 
+18:27:46.4737 FATAL on_message[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:111]: [1736015266] >> void WebSocketClient::on_message(client*, websocketpp::connection_hdl, websocketpp::endpoint<websocketpp::connection<websocketpp::config::asio_client>, websocketpp::config::asio_client>::message_ptr): 111
+18:27:46.4741 INFO GateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:112]: PM->Gate Respond
+ [1,""1804289383"",{"Result":"Accept"}] 
+18:27:46.4742 INFO GateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:123]: registration  successful result : Accept 
+18:27:48.4744 INFO GateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:103]: GateRegistration 103 Gate GateRegistration request:[0,"846930886","GateRegistration",{"GateName":"EntGate2","GateType":"1"}]
+18:27:48.4744 FATAL SendMessage[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:148]: bool WebSocketClient::SendMessage(std::string) 148: Sending message successful.
+18:27:48.4744 INFO GetResponseMessage[/home/mr/ws/Mrcode/park_manager/src/CommonLibraries/MessageManager.cpp:73]: getting response 
+18:27:48.4745 FATAL on_message[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:111]: [1736015268] >> void WebSocketClient::on_message(client*, websocketpp::connection_hdl, websocketpp::endpoint<websocketpp::connection<websocketpp::config::asio_client>, websocketpp::config::asio_client>::message_ptr): 111
+18:27:48.4750 INFO GateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:112]: PM->Gate Respond
+ [1,""846930886"",{"Result":"Accept"}] 
+18:27:48.4750 INFO GateRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:123]: registration  successful result : Accept 
+18:27:48.4751 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:159]: CarRegistration timeUTC 2025-01-04T18:27:48Z 
+ 18:27:48.4751 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:166]: CarRegistration 166 Gate CarRegistration request:[0,"1681692777","CarEnterence",{"CarPlate":"EntGate10","enteranceTime":"2025-01-04T18:27:48Z","enterenceGate":"EntGate1","handicap":"Yes"}]
+18:27:48.4751 FATAL SendMessage[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:148]: bool WebSocketClient::SendMessage(std::string) 148: Sending message successful.
+18:27:48.4752 INFO GetResponseMessage[/home/mr/ws/Mrcode/park_manager/src/CommonLibraries/MessageManager.cpp:73]: getting response 
+18:27:48.4753 FATAL on_message[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:111]: [1736015268] >> void WebSocketClient::on_message(client*, websocketpp::connection_hdl, websocketpp::endpoint<websocketpp::connection<websocketpp::config::asio_client>, websocketpp::config::asio_client>::message_ptr): 111
+18:27:48.4757 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:175]: PM->Gate Respond
+ [1,""1681692777"",{"comment":"Welcome EntGate10 ,Gate EntGate1 will be opened for you, first 30 minutes of your stay is free of charge then its only 1$ per min proceed to slot number 25 entering time 2025-01-04T18:27:48Z","result":"Accept"}] 
+18:27:50.4758 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:159]: CarRegistration timeUTC 2025-01-04T18:27:50Z 
+ 18:27:50.4759 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:166]: CarRegistration 166 Gate CarRegistration request:[0,"1714636915","CarEnterence",{"CarPlate":"EntGate11","enteranceTime":"2025-01-04T18:27:50Z","enterenceGate":"EntGate1","handicap":"No"}]
+18:27:50.4759 FATAL SendMessage[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:148]: bool WebSocketClient::SendMessage(std::string) 148: Sending message successful.
+18:27:50.4759 INFO GetResponseMessage[/home/mr/ws/Mrcode/park_manager/src/CommonLibraries/MessageManager.cpp:73]: getting response 
+18:27:50.4876 FATAL on_message[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:111]: [1736015270] >> void WebSocketClient::on_message(client*, websocketpp::connection_hdl, websocketpp::endpoint<websocketpp::connection<websocketpp::config::asio_client>, websocketpp::config::asio_client>::message_ptr): 111
+18:27:50.4881 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:175]: PM->Gate Respond
+ [1,""1714636915"",{"comment":"Welcome EntGate11 ,Gate EntGate1 will be opened for you, first 30 minutes of your stay is free of charge then its only 1$ per min proceed to slot number 20 entering time 2025-01-04T18:27:50Z","result":"Accept"}] 
+18:27:52.4882 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:159]: CarRegistration timeUTC 2025-01-04T18:27:52Z 
+ 18:27:52.4882 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:166]: CarRegistration 166 Gate CarRegistration request:[0,"1957747793","CarEnterence",{"CarPlate":"EntGate12","enteranceTime":"2025-01-04T18:27:52Z","enterenceGate":"EntGate1","handicap":"No"}]
+18:27:52.4883 FATAL SendMessage[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:148]: bool WebSocketClient::SendMessage(std::string) 148: Sending message successful.
+18:27:52.4883 INFO GetResponseMessage[/home/mr/ws/Mrcode/park_manager/src/CommonLibraries/MessageManager.cpp:73]: getting response 
+18:27:52.4884 FATAL on_message[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:111]: [1736015272] >> void WebSocketClient::on_message(client*, websocketpp::connection_hdl, websocketpp::endpoint<websocketpp::connection<websocketpp::config::asio_client>, websocketpp::config::asio_client>::message_ptr): 111
+18:27:52.4888 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:175]: PM->Gate Respond
+ [1,""1957747793"",{"comment":"Welcome EntGate12 ,Gate EntGate1 will be opened for you, first 30 minutes of your stay is free of charge then its only 1$ per min proceed to slot number 19 entering time 2025-01-04T18:27:52Z","result":"Accept"}] 
+18:27:54.4889 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:159]: CarRegistration timeUTC 2025-01-04T18:27:54Z 
+ 18:27:54.4890 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:166]: CarRegistration 166 Gate CarRegistration request:[0,"424238335","CarEnterence",{"CarPlate":"EntGate13","enteranceTime":"2025-01-04T18:27:54Z","enterenceGate":"EntGate1","handicap":"No"}]
+18:27:54.4890 FATAL SendMessage[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:148]: bool WebSocketClient::SendMessage(std::string) 148: Sending message successful.
+18:27:54.4890 INFO GetResponseMessage[/home/mr/ws/Mrcode/park_manager/src/CommonLibraries/MessageManager.cpp:73]: getting response 
+18:27:54.4892 FATAL on_message[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:111]: [1736015274] >> void WebSocketClient::on_message(client*, websocketpp::connection_hdl, websocketpp::endpoint<websocketpp::connection<websocketpp::config::asio_client>, websocketpp::config::asio_client>::message_ptr): 111
+18:27:54.4896 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:175]: PM->Gate Respond
+ [1,""424238335"",{"comment":"Welcome EntGate13 ,Gate EntGate1 will be opened for you, first 30 minutes of your stay is free of charge then its only 1$ per min proceed to slot number 18 entering time 2025-01-04T18:27:54Z","result":"Accept"}] 
+18:27:56.4897 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:159]: CarRegistration timeUTC 2025-01-04T18:27:56Z 
+ 18:27:56.4897 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:166]: CarRegistration 166 Gate CarRegistration request:[0,"719885386","CarEnterence",{"CarPlate":"EntGate14","enteranceTime":"2025-01-04T18:27:56Z","enterenceGate":"EntGate1","handicap":"Yes"}]
+18:27:56.4898 FATAL SendMessage[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:148]: bool WebSocketClient::SendMessage(std::string) 148: Sending message successful.
+18:27:56.4898 INFO GetResponseMessage[/home/mr/ws/Mrcode/park_manager/src/CommonLibraries/MessageManager.cpp:73]: getting response 
+18:27:56.4899 FATAL on_message[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:111]: [1736015276] >> void WebSocketClient::on_message(client*, websocketpp::connection_hdl, websocketpp::endpoint<websocketpp::connection<websocketpp::config::asio_client>, websocketpp::config::asio_client>::message_ptr): 111
+18:27:56.4903 INFO CarRegistration[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:175]: PM->Gate Respond
+ [1,""719885386"",{"comment":"Welcome EntGate14 ,Gate EntGate1 will be opened for you, first 30 minutes of your stay is free of charge then its only 1$ per min proceed to slot number 24 entering time 2025-01-04T18:27:56Z","result":"Accept"}] 
+18:27:58.4904 INFO CarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:214]: CarStatusUpdate 214 Gate CarStatusUpdate request:[0,"1649760492","CarStatusUpdate",{"CarPlate":"EntGate10","exitingGate":"EntGate2"}]
+18:27:58.4905 FATAL SendMessage[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:148]: bool WebSocketClient::SendMessage(std::string) 148: Sending message successful.
+18:27:58.4905 INFO GetResponseMessage[/home/mr/ws/Mrcode/park_manager/src/CommonLibraries/MessageManager.cpp:73]: getting response 
+18:27:58.4907 FATAL on_message[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:111]: [1736015278] >> void WebSocketClient::on_message(client*, websocketpp::connection_hdl, websocketpp::endpoint<websocketpp::connection<websocketpp::config::asio_client>, websocketpp::config::asio_client>::message_ptr): 111
+18:27:58.4911 INFO CarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:223]: PM->Gate Respond
+ [1,""1649760492"",{"comment":" bye bye come again :D","curreny":"$","payable":"0","status":"Exist"}] 
+18:28:00.4912 INFO CarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:214]: CarStatusUpdate 214 Gate CarStatusUpdate request:[0,"596516649","CarStatusUpdate",{"CarPlate":"EntGate11","exitingGate":"EntGate2"}]
+18:28:00.4912 FATAL SendMessage[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:148]: bool WebSocketClient::SendMessage(std::string) 148: Sending message successful.
+18:28:00.4912 INFO GetResponseMessage[/home/mr/ws/Mrcode/park_manager/src/CommonLibraries/MessageManager.cpp:73]: getting response 
+18:28:00.4914 FATAL on_message[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:111]: [1736015280] >> void WebSocketClient::on_message(client*, websocketpp::connection_hdl, websocketpp::endpoint<websocketpp::connection<websocketpp::config::asio_client>, websocketpp::config::asio_client>::message_ptr): 111
+18:28:00.4918 INFO CarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:223]: PM->Gate Respond
+ [1,""596516649"",{"comment":" bye bye come again :D","curreny":"$","payable":"0","status":"Exist"}] 
+18:28:02.4919 INFO CarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:214]: CarStatusUpdate 214 Gate CarStatusUpdate request:[0,"1189641421","CarStatusUpdate",{"CarPlate":"EntGate12","exitingGate":"EntGate2"}]
+18:28:02.4919 FATAL SendMessage[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:148]: bool WebSocketClient::SendMessage(std::string) 148: Sending message successful.
+18:28:02.4919 INFO GetResponseMessage[/home/mr/ws/Mrcode/park_manager/src/CommonLibraries/MessageManager.cpp:73]: getting response 
+18:28:02.4921 FATAL on_message[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:111]: [1736015282] >> void WebSocketClient::on_message(client*, websocketpp::connection_hdl, websocketpp::endpoint<websocketpp::connection<websocketpp::config::asio_client>, websocketpp::config::asio_client>::message_ptr): 111
+18:28:02.4925 INFO CarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:223]: PM->Gate Respond
+ [1,""1189641421"",{"comment":" bye bye come again :D","curreny":"$","payable":"0","status":"Exist"}] 
+18:28:04.4926 INFO CarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:214]: CarStatusUpdate 214 Gate CarStatusUpdate request:[0,"1025202362","CarStatusUpdate",{"CarPlate":"EntGate13","exitingGate":"EntGate2"}]
+18:28:04.4926 FATAL SendMessage[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:148]: bool WebSocketClient::SendMessage(std::string) 148: Sending message successful.
+18:28:04.4927 INFO GetResponseMessage[/home/mr/ws/Mrcode/park_manager/src/CommonLibraries/MessageManager.cpp:73]: getting response 
+18:28:04.4928 FATAL on_message[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:111]: [1736015284] >> void WebSocketClient::on_message(client*, websocketpp::connection_hdl, websocketpp::endpoint<websocketpp::connection<websocketpp::config::asio_client>, websocketpp::config::asio_client>::message_ptr): 111
+18:28:04.4932 INFO CarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:223]: PM->Gate Respond
+ [1,""1025202362"",{"comment":" bye bye come again :D","curreny":"$","payable":"0","status":"Exist"}] 
+18:28:06.4933 INFO CarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:214]: CarStatusUpdate 214 Gate CarStatusUpdate request:[0,"1350490027","CarStatusUpdate",{"CarPlate":"EntGate14","exitingGate":"EntGate2"}]
+18:28:06.4934 FATAL SendMessage[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:148]: bool WebSocketClient::SendMessage(std::string) 148: Sending message successful.
+18:28:06.4934 INFO GetResponseMessage[/home/mr/ws/Mrcode/park_manager/src/CommonLibraries/MessageManager.cpp:73]: getting response 
+18:28:06.4935 FATAL on_message[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:111]: [1736015286] >> void WebSocketClient::on_message(client*, websocketpp::connection_hdl, websocketpp::endpoint<websocketpp::connection<websocketpp::config::asio_client>, websocketpp::config::asio_client>::message_ptr): 111
+18:28:06.4939 INFO CarStatusUpdate[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:223]: PM->Gate Respond
+ [1,""1350490027"",{"comment":" bye bye come again :D","curreny":"$","payable":"0","status":"Exist"}] 
+18:28:08.4944 INFO ConnectionHolder[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:83]: exiting ConnectionHolder thread
+18:28:08.4944 ERROR ~WebSocketClient[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:28]: [0;33m WebSocketClient for id Gate2 destroyed [0m 
+18:28:08.4950 INFO ConnectionHolder[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/Gate.cpp:83]: exiting ConnectionHolder thread
+18:28:08.4950 ERROR ~WebSocketClient[/home/mr/ws/Mrcode/park_manager/src/ParkManagerClient/WebSocketClient.cpp:28]: [0;33m WebSocketClient for id Gate1 destroyed [0m 

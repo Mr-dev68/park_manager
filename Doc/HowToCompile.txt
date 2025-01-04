@@ -1,0 +1,12 @@
+1. import the project to eclipse
+2. easly use build targets provided as follow 
+	first
+	* run Setup_PM to configure Cmake for parkmanager or
+	* run Setup_PMC to configure Cmake for parkmanagerClient(gate) or
+	* run Setup_PMTU to configure Cmake for Unit Tests 
+	second
+	* Run
+	
+or directly exceute bash commands in config folder
+
+there is ready to run project in examplePackageX86
