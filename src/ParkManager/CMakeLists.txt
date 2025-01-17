@@ -10,10 +10,6 @@ target_include_directories (${PROJECT_NAME} PRIVATE
 	${CMAKE_SOURCE_DIR}/src/CommonLibraries/includes/nlohmann
 	${CMAKE_SOURCE_DIR}/src/CommonLibraries
 	)
-###############################################################################
-
-
-
 target_link_libraries(${PROJECT_NAME}
 	pthread
 	rt
