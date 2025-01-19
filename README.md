@@ -58,13 +58,13 @@ make
 
 ## **Test units**
 
-after compiling the project test units are also created. a ready to use test unit is available in examplePackageX86 follow these steps to check the results.
+after compiling the project test units are also created. a ready to use test unit is available in `examplePackageX86` follow these steps to check the results.
 
-1. run the TestUnits in examplePackageX86/TestUnit
+1. run the TestUnits in `examplePackageX86/TestUnit`
    this is a test for two senarios using cute
    I. one enterence Gate and one Exiting Gate
    II. three enterence Gates and three exiting gates
-2. please make sure the user ( excuter user) has write access to /dev/shm
+2. please make sure the user ( excuter user) has write access to `/dev/shm`
 
 ### **Monitor Logs Locally**:
 
