@@ -11,11 +11,14 @@ This repository contains the source code and related materials for managing and 
 
 ## **How to Compile**
 
-To compile the project, follow these steps: 2. **Build Targets**:
+To compile the project, follow these steps:
+
+```bash
 mkdir build
 cd build
 cmake ..
 make
+```
 
 **Example Project**:
 
