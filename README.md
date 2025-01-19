@@ -17,8 +17,9 @@ cd build
 cmake ..
 make
 
-3. **Example Project**:
-   - A ready-to-run project is available in `examplePackageX86`.
+**Example Project**:
+
+- A ready-to-run project is available in `examplePackageX86`.
 
 ---
 
@@ -50,7 +51,7 @@ export LOG_LEVEL=0
 
 The following diagram illustrates the high-level software architecture design:
 
-![Software Architecture Design](docs/images/arch-architect.jpg)
+![Software Architecture Design](Doc/images/software_architect.jpg)
 
 The architecture highlights the relationships between perception software, firmware components, and the cloud interface.
 
