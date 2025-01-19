@@ -1,6 +1,6 @@
 //  To parse this JSON data, first install
 //
-//      Boost     http://www.boost.org
+//
 //      json.hpp  https://github.com/nlohmann/json
 //
 //  Then include this file, and then do
@@ -11,47 +11,45 @@
 
 #include "json.hpp"
 
-#include <boost/optional.hpp>
-#include <stdexcept>
-#include <regex>
 #include "QuicktypeCommon.hpp"
+#include <boost/optional.hpp>
+#include <regex>
+#include <stdexcept>
 namespace quicktype {
-    using nlohmann::json;
+using nlohmann::json;
 
-    class CarEnterenceResponse {
-        public:
-    	CarEnterenceResponse() = default;
-        virtual ~CarEnterenceResponse() = default;
+class CarEnterenceResponse {
+  public:
+    CarEnterenceResponse() = default;
+    virtual ~CarEnterenceResponse() = default;
 
-        private:
-        std::string result;
-        std::string comment;
+  private:
+    std::string result;
+    std::string comment;
 
-        public:
+  public:
+    const std::string& getResult() const { return result; }
+    std::string& getMutableResult() { return result; }
+    void setResult(const std::string& value) { this->result = value; }
 
-
-        const std::string & getResult() const { return result; }
-        std::string & getMutableResult() { return result; }
-        void setResult(const std::string & value) { this->result = value; }
-
-        const std::string & getComment() const { return comment; }
-        std::string & getMutableComment() { return comment; }
-        void setComment(const std::string & value) { this->comment = value; }
-    };
-}
+    const std::string& getComment() const { return comment; }
+    std::string& getMutableComment() { return comment; }
+    void setComment(const std::string& value) { this->comment = value; }
+};
+} // namespace quicktype
 
 namespace nlohmann {
-    void from_json(const json & j, quicktype::CarEnterenceResponse & x);
-    void to_json(json & j, const quicktype::CarEnterenceResponse & x);
+void from_json(const json& j, quicktype::CarEnterenceResponse& x);
+void to_json(json& j, const quicktype::CarEnterenceResponse& x);
 
-    inline void from_json(const json & j, quicktype::CarEnterenceResponse& x) {
-        x.setResult(j.at("result").get<std::string>());
-        x.setComment(j.at("comment").get<std::string>());
-    }
-
-    inline void to_json(json & j, const quicktype::CarEnterenceResponse & x) {
-        j = json::object();
-        j["result"] = x.getResult();
-        j["comment"] = x.getComment();
-    }
+inline void from_json(const json& j, quicktype::CarEnterenceResponse& x) {
+    x.setResult(j.at("result").get<std::string>());
+    x.setComment(j.at("comment").get<std::string>());
 }
+
+inline void to_json(json& j, const quicktype::CarEnterenceResponse& x) {
+    j = json::object();
+    j["result"] = x.getResult();
+    j["comment"] = x.getComment();
+}
+} // namespace nlohmann

@@ -1,0 +1,87 @@
+# Project Documentation
+
+this is a mini project providing a concept of how to build a standalone parking management system. no hardware is considered here, the software can be used on any CPU architect with c++14 or higher. and the project is a complete software stack.
+clients are the entrance and exit gates. and the server is the park manager.
+On startup, each client should register with the server as an entrance or exit and get permission. each car at the entrance will be assigned an id based on its nameplate which will be used at the exit to calculate the parking cost.
+there are two types of parking spaces: normal and parking spaces for Handicaps ( can be extended for ev charging parking spaces).
+check the ready-to-use example for the x86 system provided to find out more about the configuration.
+This repository contains the source code and related materials for managing and testing parking systems.
+
+---
+
+## **How to Compile**
+
+To compile the project, follow these steps: 2. **Build Targets**:
+mkdir build
+cd build
+cmake ..
+make
+
+3. **Example Project**:
+   - A ready-to-run project is available in `examplePackageX86`.
+
+---
+
+## **Park Manager (Server)**
+
+### **Setup Instructions**:
+
+1. Ensure the `config.ini` file is present and that its absolute path is either:
+
+   - Provided during class initialization.
+   - Set in the `ConfigPath` value in `CommonLibraries/utils.hpp`.
+
+2. The server must have **read** and **write** access to the directory where `config.ini` is located.
+
+3. Start the server.
+
+4. The user (execution user) must have **write access** to `/dev/shm`.
+
+### **Monitor Logs Locally**:
+
+Set the following environment variables:
+
+```bash
+export LOG_PRINT_LEVEL=0
+export LOG_LEVEL=0
+```
+
+## Software Architecture Design
+
+The following diagram illustrates the high-level software architecture design:
+
+![Software Architecture Design](docs/images/arch-architect.jpg)
+
+The architecture highlights the relationships between perception software, firmware components, and the cloud interface.
+
+## Modular Design
+
+The following diagram illustrates the modular design:
+
+![Modular Design](Doc/images/modular.jpg)
+
+This design emphasizes the separation of concerns, scalability, and maintainability across different software modules. Each module is responsible for a specific functionality while interacting seamlessly with other components.
+
+## System Design
+
+The following diagram illustrates a built and tested system which uses this project:
+
+![system design](Doc/images/system_design.jpg)
+
+## entrance sequence
+
+entrance procedure and handshakes between the gate and the server:
+
+![entrance gate](Doc/images/enterence.jpg)
+
+## exit sequence
+
+exit procedure and handshakes between the gate and the server:
+
+![exit gate](Doc/images/exit.jpg)
+
+## PDU format
+
+protocol defined for websocket communication:
+
+![PDUs](Doc/images/pdus.jpg)
