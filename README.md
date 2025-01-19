@@ -41,6 +41,31 @@ make
 
 4. The user (execution user) must have **write access** to `/dev/shm`.
 
+## **Park Manager (client)**
+
+### **Setup Instructions**:
+
+1. Ensure the `config.ini` file is present and that its absolute path is either:
+
+   - Provided during class initialization.
+   - Set in the `ConfigPath` value in `CommonLibraries/utils.hpp`.
+
+2. The client must have **read** and **write** access to the directory where `config.ini` is located.
+
+3. Start the client.
+
+4. The user (execution user) must have **write access** to `/dev/shm`.
+
+## **Test units**
+
+after compiling the project test units are also created. a ready to use test unit is available in examplePackageX86 follow these steps to check the results.
+
+1. run the TestUnits in examplePackageX86/TestUnit
+   this is a test for two senarios using cute
+   I. one enterence Gate and one Exiting Gate
+   II. three enterence Gates and three exiting gates
+2. please make sure the user ( excuter user) has write access to /dev/shm
+
 ### **Monitor Logs Locally**:
 
 Set the following environment variables:
@@ -63,8 +88,6 @@ The architecture highlights the relationships between perception software, firmw
 The following diagram illustrates the modular design:
 
 ![Modular Design](Doc/images/modular.jpg)
-
-This design emphasizes the separation of concerns, scalability, and maintainability across different software modules. Each module is responsible for a specific functionality while interacting seamlessly with other components.
 
 ## System Design
 
